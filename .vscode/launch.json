@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "editor-browser",
+      "request": "launch",
+      "name": "mark-view (README landing)",
+      "url": "http://localhost:8000/markview.html"
+    },
+    {
+      "type": "editor-browser",
+      "request": "launch",
+      "name": "mark-view (demo)",
+      "url": "http://localhost:8000/markview.html#demo/sample.md"
+    },
+    {
+      "type": "editor-browser",
+      "request": "launch",
+      "name": "mark-view (test-images)",
+      "url": "http://localhost:8000/markview.html#test-images.md"
+    }
+  ]
+}
