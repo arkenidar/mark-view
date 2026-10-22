@@ -207,7 +207,7 @@ without access to the original conversation.
 
 **Context:** Wanted the 4 photos in `my-photos/` viewable in markview.
 
-**Result:** `my-photos/index.md` gallery; images resolve to root-relative paths.
+**Result:** `my-photos/index.md` gallery (personal, not part of this repo); images resolve to root-relative paths.
 
 ---
 
@@ -217,7 +217,7 @@ without access to the original conversation.
 
 **Context:** Follow-up to "want me to link the gallery from README?" — you said yes.
 
-**Result:** Linked `my-photos/index.md` from `README.md` under a "Galleries" section.
+**Result:** Linked `my-photos/index.md` from `README.md` under a "Galleries" section (personal, not part of this repo).
 
 ---
 
@@ -268,3 +268,33 @@ without access to the original conversation.
 **Context:** Asked whether the `.md` docs reflect the latest code.
 
 **Result:** Brought `README.md`, `markview-explained.md`, `markview-changelog.md`, `markview-testing.md`, and `prompts.md` up to date with the scroll-memory feature and the Problems-pane fix.
+
+---
+
+## 27. Prepare for publication
+
+**Prompt:** "[publication] to prepare for publication use no more /home/arkenidar/Dropbox/000_tidy_this/my-notes , instead use the directory ~/code/mark-view for this mark-view gh repo ( ask for confirmations )"
+
+**Context:** Wanted a clean repo separate from the notes folder.
+
+**Result:** Created `~/code/mark-view` with `markview.html`, a clean `README.md`, `demo/`, `docs/`, `.vscode/`, `LICENSE` (MIT), and `.gitignore`; `git init` + initial commit.
+
+---
+
+## 28. Publish to GitHub
+
+**Prompt:** "publish this repo as : public repo named arkenidar/mark-view"
+
+**Context:** Ready to go public.
+
+**Result:** Created the public repo https://github.com/arkenidar/mark-view and pushed `main`.
+
+---
+
+## 29. Update documentation
+
+**Prompt:** "update documentation"
+
+**Context:** Make the docs consistent with the published repo (neutralize personal-note references, reference the GitHub repo).
+
+**Result:** Updated `docs/markview-changelog.md`, `docs/prompts.md`, `docs/markview-testing.md`, and `README.md`.

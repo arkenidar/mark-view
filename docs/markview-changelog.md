@@ -70,11 +70,12 @@ A record of the features and fixes added to `markview.html`, in order.
 - Fix: `min-width: 0` on the navbar form, a ≤420px media query,
   `overflow-wrap: break-word` on `main`, and horizontal scrolling for wide tables.
 
-## Photo gallery & docs
+## Docs & prompts
 
-- Added `my-photos/index.md` (image gallery) and linked it from `README.md`.
-- Added `prompts.md`, `markview-changelog.md`, `markview-testing.md` and
+- Added `markview-changelog.md`, `markview-testing.md`, and `prompts.md`;
   refreshed `README.md` / `markview-explained.md`.
+- (A personal photo gallery was also added in the author's notes — not part of
+  this repo.)
 
 ## Scroll position memory
 

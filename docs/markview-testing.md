@@ -2,13 +2,16 @@
 
 ## Serve locally
 
-```bash
-cd mark-view  # the repository root
-python3 -m http.server 8000
-# open http://localhost:8000/markview.html
-```
-
 (`fetch()` is blocked under `file://`, so HTTP serving is required.)
+
+- **htserve** (bundled in this repo, amd64):
+  - GNU/Linux: `./htserve --port 8000`
+  - Windows: `htserve.exe --port 8000`
+- **Python** (built-in):
+  - GNU/Linux/macOS: `python3 -m http.server 8000`
+  - Windows: `python -m http.server 8000` (or `py -m http.server 8000`)
+
+Then open `http://localhost:8000/markview.html`.
 
 ## Static checks
 
@@ -41,8 +44,9 @@ Used Chromium (desktop and mobile-emulated) for end-to-end checks:
 ## Deployment
 
 `markview.html` is a single file. Copy it next to your `.md` tree and serve the
-folder. The live copy is at:
+folder.
 
-- `https://github.arkenidar.com/markview.html`
+- Repository: `https://github.com/arkenidar/mark-view`
+- Live demo (author's server): `https://github.arkenidar.com/markview.html`
 
 Re-deploy `markview.html` after changes to pick up the latest fixes.

@@ -25,13 +25,19 @@ one `markview.html`. Drop it next to your `.md` files and serve the folder.
 
 Serve the folder and open `markview.html`:
 
-```bash
-python3 -m http.server 8000
-# open http://localhost:8000/markview.html
-```
+- **Bundled htserve** (no Python needed):
+  - GNU/Linux: `./htserve --port 8000`
+  - Windows: `htserve.exe --port 8000`
+- **Python** (built-in):
+  - GNU/Linux/macOS: `python3 -m http.server 8000`
+  - Windows: `python -m http.server 8000`
+
+Then open `http://localhost:8000/markview.html`.
 
 - [Demo page](demo/sample.md)
 - [Test page — external images](test-images.md)
+
+Live demo: https://github.arkenidar.com/markview.html
 
 ## Documentation
 
