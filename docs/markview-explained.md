@@ -140,5 +140,8 @@ scroll horizontally (`display: block; overflow-x: auto`).
 
 `marked` is inlined as-is (MIT license header preserved), and a leading
 `// @ts-nocheck` keeps the VS Code Problems pane quiet for the untyped inline
-script. The whole app ships as one file with no build step and no runtime
-network dependency.
+script. A small **Noto Sans Mono** subset (box-drawing + arrows + geometric
+shapes, OFL) is embedded as a base64 `@font-face` so code blocks and ASCII art
+align on every platform. See [how the file is bundled](markview-bundling.md) for
+the reproducible build steps (including `scripts/embed-font.py`). The whole app
+ships as one file with no build step and no runtime network dependency.

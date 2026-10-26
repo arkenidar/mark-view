@@ -19,7 +19,7 @@ one `markview.html`. Drop it next to your `.md` files and serve the folder.
 - **Media support** — images/PDFs resolve relative to the current document's folder.
 - **Responsive** — no horizontal overflow on narrow/mobile viewports.
 - **URL cleanup** — strips `fbclid` / `gclid` / `utm_*` tracking params.
-- **Self-contained** — one file, no CDN.
+- **Self-contained** — one file, no CDN (even the monospace font is embedded).
 
 ## Try it
 
@@ -42,6 +42,7 @@ Live demo: https://github.arkenidar.com/markview.html
 ## Documentation
 
 - [Implementation explained](docs/markview-explained.md)
+- [Bundling (how the single file is built)](docs/markview-bundling.md)
 - [Changelog](docs/markview-changelog.md)
 - [Testing & deployment](docs/markview-testing.md)
 - [Prompts](docs/prompts.md)

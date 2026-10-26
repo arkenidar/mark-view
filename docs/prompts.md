@@ -298,3 +298,53 @@ without access to the original conversation.
 **Context:** Make the docs consistent with the published repo (neutralize personal-note references, reference the GitHub repo).
 
 **Result:** Updated `docs/markview-changelog.md`, `docs/prompts.md`, `docs/markview-testing.md`, and `README.md`.
+
+---
+
+## 30. htserve serving docs
+
+**Prompt:** "are the recent htserve adds documented to use this tool ( both windows and gnu-linux )" (+ "https://github.com/arkenidar/htserve" + the bundled-binaries note)
+
+**Context:** You'd bundled `htserve` / `htserve.exe` into the repo and wanted serving instructions for both platforms.
+
+**Result:** `README.md` "Try it" and `docs/markview-testing.md` "Serve locally" now document the bundled `htserve` binaries plus Python, for GNU/Linux and Windows.
+
+---
+
+## 31. ASCII art misalignment on Android
+
+**Prompt:** "the ascii art is good on desktop os and bad in android os ( both using MS-Edge ) . eg in …cline-deepseek--graphic-stack.md"
+
+**Context:** Box-drawing + arrow glyphs misaligned on Android (its monospace font lacks them → proportional fallback).
+
+**Result:** First fix — expanded monospace stack + tighter code line-height.
+
+---
+
+## 32. Still misaligned → embedded font
+
+**Prompt:** "idk but still misaligns ( deploy done … )"
+
+**Context:** The font-stack fix didn't help on Android (the shipped monospace genuinely lacks the glyphs).
+
+**Result:** Embedded a 13.9 KB Noto Sans Mono subset (479 glyphs) as a base64 `@font-face` (`markview-mono`), first in the code font stack → consistent metrics everywhere.
+
+---
+
+## 33. Update docs (prompts)
+
+**Prompt:** "update documentations especially prompts.md"
+
+**Context:** Wanted the docs to reflect the font-embedding work.
+
+**Result:** Added prompts #30–#34 and updated the changelog / explained / README.
+
+---
+
+## 34. Reproducible bundling
+
+**Prompt:** "also document the file-bundling process and make it reproducible and manageable by understanding and tweakability"
+
+**Context:** Wanted the single-file bundling (especially the embedded font) reproducible and tweakable.
+
+**Result:** Added `scripts/embed-font.py` (reproducible font-subset embedder, tweakable via env vars) and `docs/markview-bundling.md`.

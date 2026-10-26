@@ -88,3 +88,16 @@ A record of the features and fixes added to `markview.html`, in order.
 - Bug: VS Code's HTML validator reported a spurious `Expression expected` at a
   multi-line template literal inside the inlined `marked` library.
 - Fix: `.vscode/settings.json` with `"html.validate.scripts": false`.
+
+## ASCII / box-art alignment (Android)
+
+- Bug: box-drawing + arrow glyphs misaligned on Android (its monospace font
+  lacks them → proportional fallback).
+- Fix: embedded a Noto Sans Mono subset (479 glyphs, 13.9 KB) as a base64
+  `@font-face`, first in the code font stack — consistent metrics on every OS.
+  (Earlier attempt: expanded font stack + tighter line-height.)
+
+## Bundling docs & script
+
+- Added `docs/markview-bundling.md` (how the single file is assembled).
+- Added `scripts/embed-font.py` (reproducible, tweakable font-subset embedder).
